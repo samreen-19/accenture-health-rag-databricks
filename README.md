@@ -1,6 +1,6 @@
 # Intelligent Document Parsing (IDP) Agent for Regional Healthcare in Ghana
 
-**A Databricks-powered Agentic AI intelligence layer that extracts medical facility capabilities from messy, unstructured data, reasons over it to detect suspicious claims, and maps critical medical deserts.** **[Watch the 5-Minute Project Demo Here](YOUR_YOUTUBE_OR_DRIVE_LINK)**
+**A Databricks-powered Agentic AI intelligence layer that extracts medical facility capabilities from messy, unstructured data, reasons over it to detect suspicious claims, and maps critical medical deserts.** **[Watch the 5-Minute Project Demo Here]((https://youtu.be/rcJFrKHayxQ))**
 
 ## The Challenge & Motivation
 By 2030, the world will face a massive shortage of healthcare workers—a planetary-scale coordination failure. This project targets the hackathon's ambitious goal: to drastically reduce the time it takes for patients to receive lifesaving treatment by using AI to bridge the gap between medical expertise and the hospitals that urgently need them. 
