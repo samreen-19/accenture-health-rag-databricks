@@ -1,33 +1,31 @@
-# 🏥 Intelligent Document Parsing (IDP) Agent for Regional Healthcare
+# Intelligent Document Parsing (IDP) Agent for Regional Healthcare in Ghana
 
-**A Databricks-powered Agentic Al intelligence layer that extracts medical facility capabilities from messy, unstructured data, reasons over it to detect suspicious claims, and maps critical medical deserts.** 
+**A Databricks-powered Agentic AI intelligence layer that extracts medical facility capabilities from messy, unstructured data, reasons over it to detect suspicious claims, and maps critical medical deserts.** **[Watch the 5-Minute Project Demo Here](YOUR_YOUTUBE_OR_DRIVE_LINK)**
 
-🎥 **[Watch the 5-Minute Project Demo Here](YOUR_YOUTUBE_OR_DRIVE_LINK)**
-
-## 🚀 The Challenge & Motivation
+## The Challenge & Motivation
 By 2030, the world will face a massive shortage of healthcare workers—a planetary-scale coordination failure. This project targets the hackathon's ambitious goal: to drastically reduce the time it takes for patients to receive lifesaving treatment by using AI to bridge the gap between medical expertise and the hospitals that urgently need them. 
 
 ## Goals Achieved
 
-**1. IDP Innovation & Unstructured Feature Extraction **
+**1. IDP Innovation & Unstructured Feature Extraction**
 * Processes free-form text fields from the Virtue Foundation Ghana dataset (procedures, equipment, and capabilities).
 * Uses Databricks Serverless AI Gateway (`meta-llama-3-3-70b-instruct`) to strictly map unstructured insights into the structured schema (Pydantic).
 
-**2. Technical Accuracy & Anomaly Detection **
+**2. Technical Accuracy & Anomaly Detection**
 * Built a smart **planning and reasoning system** that automatically cross-references extracted clinical claims against structural facility capacities.
 * Successfully detects incomplete or suspicious claims (e.g., flagging a clinic claiming to perform advanced surgeries while reporting zero doctors).
 
-**3. Social Impact & Medical Desert Mapping *
+**3. Social Impact & Medical Desert Mapping**
 * Combines intelligent synthesis with an interactive Plotly Express geospatial dashboard.
 * Visually identifies "medical deserts," mapping where critical expertise is missing and where patients are at risk, aiding NGOs in resource allocation.
 
-**4. User Experience **
+**4. User Experience**
 * **Interactive RAG Assistant:** An AI agent powered by Databricks Serverless Vector Search that retrieves audited clinical facts to accurately answer NGO planners' natural language questions.
 
-**5. Agentic-Step Transparency **
+**5. Agentic-Step Transparency**
 * Integrates **MLflow Tracing** to trace the inputs and outputs of the internal agent loops. This provides agentic-step level transparency, showing exactly what data and logic were used by the AI to make a claim or flag an anomaly.
 
-##  Architecture & Tech Stack
+## Architecture & Tech Stack
 Built entirely on the **Databricks Data Intelligence Platform**
 * **Serverless Notebook Compute:** Instant, on-demand processing power to run the pandas/Spark data engineering pipeline.
 * **Databricks AI Gateway:** `meta-llama-3-3-70b-instruct` endpoint for structured IDP extraction.
@@ -35,7 +33,7 @@ Built entirely on the **Databricks Data Intelligence Platform**
 * **Unity Catalog & Delta Lake:** Managed tables with **Change Data Feed (CDF)** enabled for auto-syncing data updates.
 * **MLflow Tracing:** Deep execution monitoring to track multi-agent loops and reasoning latency.
 
-##  Instructions to Run on Databricks
+## Instructions to Run on Databricks
 
 **Workspace & Compute Requirements:**
 * A Databricks workspace with Unity Catalog enabled.
@@ -43,7 +41,7 @@ Built entirely on the **Databricks Data Intelligence Platform**
 * Access to Serverless Foundation Model Serving, specifically the `databricks-meta-llama-3-3-70b-instruct` endpoint.
 
 **Data Setup:**
-1. Download the raw CSV dataset (`https://drive.google.com/file/d/1qgmLHrJYu8TKY2UeQ-VFD4PQ_avPoZ3d/view`).
+1. 1. Download the raw CSV dataset: [Virtue Foundation Ghana v0.3 - Sheet1.csv](https://drive.google.com/file/d/1qgmLHrJYu8TKY2UeQ-VFD4PQ_avPoZ3d/view).
 2. Upload the CSV into a Unity Catalog Volume. 
 3. Open the imported `accenture_hackathon_final.ipynb` notebook and navigate to **Section 7**. Update the `file_path` variable to point to the exact volume path where you uploaded the CSV.
 
