@@ -31,7 +31,6 @@ Built entirely on the **Databricks Data Intelligence Platform**
 * **Databricks AI Gateway:** `meta-llama-3-3-70b-instruct` endpoint for structured IDP extraction.
 * **Serverless Vector Search:** `databricks-qwen3-embedding-0-6b` for semantic retrieval and auto-syncing indexing.
 * **Unity Catalog & Delta Lake:** Managed tables with **Change Data Feed (CDF)** enabled for auto-syncing data updates.
-* **MLflow Tracing:** Deep execution monitoring to track multi-agent loops and reasoning latency.
 
 ## Instructions to Run on Databricks
 
