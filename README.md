@@ -44,7 +44,6 @@ Built entirely on the **Databricks Data Intelligence Platform**
 
 **Execution Steps:**
 1. Attach the notebook to **Serverless** compute (or your standard cluster) and click **Run All** at the top of the notebook.
-2. **Section 1** will automatically install the necessary pipeline dependencies (`langgraph`, `mlflow`, `pydantic`, `databricks-sdk`). *Note: You may need to restart the Python kernel after this first cell runs.*
-3. The pipeline handles authentication automatically using the notebook's context token to hit the AI Gateway. 
-4. The ingestion loop in **Section 9** includes a 1.5-second `time.sleep()` delay to respect endpoint rate limits. Please allow a few minutes for the batch to process completely.
-5. The final audited output will automatically be registered as a managed Delta Table in Unity Catalog at `workspace.default.audited_healthcare_facilities_final` with Change Data Feed (CDF) enabled.
+2. **Section 1** will automatically install the necessary pipeline dependencies (`mlflow`, `pydantic`, `databricks-sdk`). 
+3. The ingestion loop in **Section 9** includes a 1.5-second `time.sleep()` delay to respect endpoint rate limits.
+4. The final audited output will automatically be registered as a managed Delta Table in Unity Catalog at `workspace.default.audited_healthcare_facilities_final` with Change Data Feed (CDF) enabled.
