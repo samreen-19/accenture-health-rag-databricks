@@ -1,6 +1,6 @@
 # 🏥 Agentic RAG Pipeline for Regional Healthcare Resource Validation
 
-**A Databricks-powered Agentic RAG assistant that cleans regional healthcare logs, runs automated rule-based reasoning to flag medical anomalies, and answers user questions.** Built for the Accenture Hackathon.
+**A Databricks-powered Agentic RAG assistant that cleans regional healthcare logs, runs automated rule-based reasoning to flag medical anomalies, and answers user questions.** 
 
 🎥 **[Watch the 5-Minute Project Demo Here](YOUR_YOUTUBE_OR_DRIVE_LINK)**
 
