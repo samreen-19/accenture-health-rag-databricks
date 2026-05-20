@@ -7,23 +7,21 @@ By 2030, the world will face a massive shortage of healthcare workers—a planet
 
 ## Goals Achieved
 
-**1. IDP Innovation & Unstructured Feature Extraction**
+**1. Unstructured Feature Extraction**
 * Processes free-form text fields from the Virtue Foundation Ghana dataset (procedures, equipment, and capabilities).
 * Uses Databricks Serverless AI Gateway (`meta-llama-3-3-70b-instruct`) to strictly map unstructured insights into the structured schema (Pydantic).
 
-**2. Technical Accuracy & Anomaly Detection**
+**2. Anomaly Detection**
 * Built a smart **planning and reasoning system** that automatically cross-references extracted clinical claims against structural facility capacities.
 * Successfully detects incomplete or suspicious claims (e.g., flagging a clinic claiming to perform advanced surgeries while reporting zero doctors).
 
-**3. Social Impact & Medical Desert Mapping**
+**3. Medical Desert Mapping**
 * Combines intelligent synthesis with an interactive Plotly Express geospatial dashboard.
 * Visually identifies "medical deserts," mapping where critical expertise is missing and where patients are at risk, aiding NGOs in resource allocation.
 
 **4. User Experience**
 * **Interactive RAG Assistant:** An AI agent powered by Databricks Serverless Vector Search that retrieves audited clinical facts to accurately answer NGO planners' natural language questions.
 
-**5. Agentic-Step Transparency**
-* Integrates **MLflow Tracing** to trace the inputs and outputs of the internal agent loops. This provides agentic-step level transparency, showing exactly what data and logic were used by the AI to make a claim or flag an anomaly.
 
 ## Architecture & Tech Stack
 Built entirely on the **Databricks Data Intelligence Platform**
