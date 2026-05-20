@@ -36,11 +36,11 @@ Built entirely on the **Databricks Data Intelligence Platform**
 
 **Workspace & Compute Requirements:**
 * A Databricks workspace with Unity Catalog enabled.
-* **Serverless Compute** enabled for notebook execution (or a standard Databricks Runtime 13.3 LTS ML cluster).
+* **Serverless Compute** enabled for notebook execution 
 * Access to Serverless Foundation Model Serving, specifically the `databricks-meta-llama-3-3-70b-instruct` endpoint.
 
 **Data Setup:**
-1. 1. Download the raw CSV dataset: [Virtue Foundation Ghana v0.3 - Sheet1.csv](https://drive.google.com/file/d/1qgmLHrJYu8TKY2UeQ-VFD4PQ_avPoZ3d/view).
+1. Download the raw CSV dataset: [Virtue Foundation Ghana v0.3 - Sheet1.csv](https://drive.google.com/file/d/1qgmLHrJYu8TKY2UeQ-VFD4PQ_avPoZ3d/view).
 2. Upload the CSV into a Unity Catalog Volume. 
 3. Open the imported `accenture_hackathon_final.ipynb` notebook and navigate to **Section 7**. Update the `file_path` variable to point to the exact volume path where you uploaded the CSV.
 
